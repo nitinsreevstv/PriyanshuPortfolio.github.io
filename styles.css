@@ -167,3 +167,55 @@ footer .footer-rights{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .leftSection, .rightSection {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .leftSection {
+        margin-left: 0;
+    }
+
+    .rightSection img {
+        width: 70%;
+    }
+
+    .verticalText, .verticalDescription {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer > div {
+        width: auto;
+        text-align: center;
+    }
+
+    .footer .footer-rights {
+        padding: 12px 0;
+    }
+
+    .leftSection .buttons {
+        padding: 20px 0;
+    }
+}
