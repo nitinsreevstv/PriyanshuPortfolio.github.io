@@ -59,8 +59,10 @@ nav ul li a:hover {
 }
 
 .rightSection img {
-    width: 80%;
-    top: 50px;
+    width: 95%;
+    margin: 0 0 40px;
+    border: white 2px solid;
+    border-radius: 15px;
 }
 
 .purple {
@@ -117,14 +119,14 @@ main hr {
 
 .verticalText {
     position: relative;
-    top: 75px;
+    top: 50px;
     width: 150px;
     font-size: 14px;
 }
 
 .verticalDescription {
     position: relative;
-    top: 86px;
+    top: 60px;
     color: grey;
     width: 150px;
     font-size: 9px;
@@ -134,6 +136,7 @@ main hr {
     width: 250px;
     height: auto;
     margin-top: 10px;
+    margin-left: -20%;
 }
 footer{
     background-color: rgb(12, 12, 33);
