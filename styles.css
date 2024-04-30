@@ -181,6 +181,24 @@ footer .footer-rights{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    margin: 0 620px;
+    background-color: white;
+    border-radius: 25px;
+  }
+
+.social-icon {
+    margin: 5px 10px; 
+    padding: auto;
+}
+
+.social-icon img {
+    width: 30px; /* Adjust the size of the icons */
+}
+
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
