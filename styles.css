@@ -59,8 +59,8 @@ nav ul li a:hover {
 }
 
 .rightSection img {
-    width: 95%;
-    margin: 0 0 40px;
+    width: 80%;
+    margin: 0 -25px 180px;
     border: white 2px solid;
     border-radius: 15px;
 }
