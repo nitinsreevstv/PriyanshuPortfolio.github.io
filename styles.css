@@ -218,29 +218,46 @@ footer .footer-rights{
 .toolsUsage {
     background-color: rgb(0, 0, 33);
     width: 83%;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 columns with equal width */
-    justify-content: space-between; /* Optional: Distribute icons evenly within the grid */
-    margin: 40px 80px;
-    margin-right: 100px;
-    padding: 50px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    gap: 10px; /* Optional spacing between icons */
-  }
-  
-  .toolsUsage .toolsIcon {
-    background-color: rgb(0, 0, 33);
-    width: 20px; /* Not required with grid layout */
-    height: 20px; /* Adjust height as needed */
     display: flex;
-    align-items: center; /* Center content vertically */
-    margin: inherit;
-  }
-  
-  .toolsUsage .toolsIcon:not(:last-child) {
-    margin-right: 20px; /* Optional spacing between icons */
-  }
+    justify-content: space-between;
+    margin: 40px auto; /* Center the section horizontally */
+    padding: 50px 80px; /* Add padding to the top and bottom */
+    gap: 10px; /* Optional spacing between icons */
+}
+
+.toolsUsage .toolsIcon {
+    background-color: rgb(0, 0, 33);
+    width: 50px; /* Adjust the width of each icon container */
+    height: 50px; /* Adjust the height of each icon container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.toolsUsage .toolsIcon img {
+    width: 60px; /* Adjust the size of the icons */
+}
+.toolsUsage .toolsIcon:hover{
+    transform: scale(1.2);
+}
+.toolsUsage .tooltip{
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.toolsUsage .toolsIcon:hover .tooltip{
+    opacity: 1;
+}
 
 
 
@@ -295,4 +312,20 @@ footer .footer-rights{
     .leftSection .buttons {
         padding: 20px 0;
     }
+    .toolsUsage {
+        flex-wrap: wrap; /* Allow icons to wrap to the next line on smaller screens */
+        justify-content: center; /* Center icons horizontally on smaller screens */
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .toolsUsage .toolsIcon {
+        width: 40px; /* Adjust the width of each icon container for smaller screens */
+        height: 40px; /* Adjust the height of each icon container for smaller screens */
+        margin: 5px; /* Add margin between icons for smaller screens */
+    }
+
+    .toolsUsage .toolsIcon img {
+        width: 25px; /* Adjust the size of the icons for smaller screens */
+    }
 }
+
