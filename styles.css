@@ -240,7 +240,7 @@ footer .footer-rights{
     width: 60px; /* Adjust the size of the icons */
 }
 .toolsUsage .toolsIcon:hover{
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 .toolsUsage .tooltip{
     position: absolute;
@@ -259,73 +259,63 @@ footer .footer-rights{
     opacity: 1;
 }
 
-
-
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        height: auto;
+    .fixed-header nav ul li {
+        margin: 0 10px; /* Adjust margin for smaller screens */
     }
 
-    nav ul {
-        justify-content: flex-start;
-        margin-top: 20px;
+    .firstSection {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        margin: 40px 0; /* Adjust margin for smaller screens */
     }
 
-    nav ul li {
-        margin: 0 10px;
-    }
-
-    .leftSection, .rightSection {
-        width: 100%;
-        text-align: center;
-        margin: 20px 0;
+    .firstSection > div {
+        width: 100%; /* Make child divs full width on smaller screens */
+        margin: 0; /* Remove margin for smaller screens */
+        text-align: center; /* Center align text */
     }
 
     .leftSection {
-        margin-left: 0;
+        font-size: 2rem; /* Reduce font size for smaller screens */
+        margin-left: 0; /* Remove left margin */
     }
 
     .rightSection img {
-        width: 70%;
+        width: 70%; /* Adjust image width for smaller screens */
+        margin: 0 auto 40px; /* Center image and reduce bottom margin */
     }
 
-    .verticalText, .verticalDescription {
-        width: 100%;
-        text-align: center;
+    .secondSection .box {
+        width: 100%; /* Make boxes full width on smaller screens */
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center align items */
     }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
+    .secondSection .vertical {
+        margin: 20px 0; /* Adjust margin between boxes */
     }
 
-    .footer > div {
-        width: auto;
-        text-align: center;
-    }
-
-    .footer .footer-rights {
-        padding: 12px 0;
-    }
-
-    .leftSection .buttons {
-        padding: 20px 0;
-    }
     .toolsUsage {
-        flex-wrap: wrap; /* Allow icons to wrap to the next line on smaller screens */
-        justify-content: center; /* Center icons horizontally on smaller screens */
-        padding: 50px 20px; /* Adjust padding for smaller screens */
+        width: 100%; /* Make the section full width on smaller screens */
+        padding: 30px 20px; /* Adjust padding for smaller screens */
+        gap: 20px; /* Increase gap between icons */
+        overflow-x: auto; /* Add horizontal scroll for small screens */
     }
 
     .toolsUsage .toolsIcon {
-        width: 40px; /* Adjust the width of each icon container for smaller screens */
-        height: 40px; /* Adjust the height of each icon container for smaller screens */
-        margin: 5px; /* Add margin between icons for smaller screens */
+        width: 60px; /* Adjust the width of each icon container */
+        height: 60px; /* Adjust the height of each icon container */
     }
 
     .toolsUsage .toolsIcon img {
-        width: 25px; /* Adjust the size of the icons for smaller screens */
+        width: 40px; /* Adjust the size of the icons */
+    }
+
+    .social-icons {
+        margin: 0 auto; /* Center the social icons */
+    }
+
+    .social-icon {
+        margin: 5px; /* Adjust margin between social icons */
     }
 }
-
