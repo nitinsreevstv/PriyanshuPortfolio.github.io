@@ -112,6 +112,11 @@ main hr {
 .secondSection h1 {
     font-size: 1.9rem;
 }
+.forIcons h1{
+    font-size: 1.9rem;
+    margin: auto;
+    max-width: 80vw;
+}
 
 .secondSection .box {
     background: white;
@@ -195,8 +200,8 @@ footer .footer-rights{
     justify-content: center;
     height: 45px;
     margin: 0 620px;
-    background-color: white;
-    border-radius: 25px;
+    /* background-color: white; */
+    /* border-radius: 25px; */
   }
 
 .social-icon {
@@ -204,7 +209,7 @@ footer .footer-rights{
     padding: auto;
 }
 .social-icon img:hover{
-    transform: scale(1.25);
+    transform: scale(1.4);
 }
 
 .social-icon img {
@@ -226,8 +231,8 @@ footer .footer-rights{
   
   .toolsUsage .toolsIcon {
     background-color: rgb(0, 0, 33);
-    width: 50px; /* Not required with grid layout */
-    height: 50px; /* Adjust height as needed */
+    width: 20px; /* Not required with grid layout */
+    height: 20px; /* Adjust height as needed */
     display: flex;
     align-items: center; /* Center content vertically */
     margin: inherit;
