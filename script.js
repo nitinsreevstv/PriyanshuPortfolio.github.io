@@ -15,4 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
         link.download = 'Priyanshu_resume.docx'; 
         link.click();
     };
+
+    // Add event listener for clicking on the "Services" link
+    document.getElementById('services-link').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        
+        // Scroll to the "Work Experience" section
+        document.getElementById('work-experience-section').scrollIntoView({ behavior: 'smooth' });
+    });
 });
+
