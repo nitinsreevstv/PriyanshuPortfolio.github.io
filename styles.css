@@ -203,6 +203,9 @@ footer .footer-rights{
     margin: 5px 10px; 
     padding: auto;
 }
+.social-icon img:hover{
+    transform: scale(1.25);
+}
 
 .social-icon img {
     width: 30px; /* Adjust the size of the icons */
