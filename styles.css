@@ -3,7 +3,7 @@
     padding: 0;
 }
 .fixed-header {
-    position: fixed;
+    position: fixed; /* Fixed position for larger screens */
     top: 0;
     left: 0;
     width: 100%;
@@ -259,63 +259,77 @@ footer .footer-rights{
     opacity: 1;
 }
 
+/* Responsive styles for tablets (up to 768px) */
 @media screen and (max-width: 768px) {
+    .fixed-header {
+        position: static; /* Change header position to static for smaller screens */
+    }
+
+    .fixed-header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fixed-header .left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px; /* Add spacing between logo and menu */
+    }
+
+    .fixed-header .logo-img {
+        width: 200px; /*Adjust logo size for smaller screens */
+    }
+
+    .fixed-header .right {
+        width: 100%;
+        margin-bottom: 10px; /* Add spacing between logo and menu */
+    }
+
+    .fixed-header nav ul {
+        padding: 0;
+        width: 100%;
+        list-style: none; /* Remove default list styling */
+    }
+
     .fixed-header nav ul li {
-        margin: 0 10px; /* Adjust margin for smaller screens */
+        margin: 10px 0;
+        text-align: center;
     }
 
-    .firstSection {
-        flex-direction: column; /* Stack sections vertically on smaller screens */
-        margin: 40px 0; /* Adjust margin for smaller screens */
+    .fixed-header nav ul li a {
+        padding: 8px 0;
+        display: block;
     }
+}
 
-    .firstSection > div {
-        width: 100%; /* Make child divs full width on smaller screens */
-        margin: 0; /* Remove margin for smaller screens */
-        text-align: center; /* Center align text */
+
+
+
+
+/* Responsive styles for mobile phones (up to 480px) */
+@media screen and (max-width: 480px) {
+    .logo-img {
+        width: 200px; /* Adjust logo size for smaller screens */
     }
-
     .leftSection {
-        font-size: 2rem; /* Reduce font size for smaller screens */
-        margin-left: 0; /* Remove left margin */
+        font-size: 1.5rem;
     }
 
     .rightSection img {
-        width: 70%; /* Adjust image width for smaller screens */
-        margin: 0 auto 40px; /* Center image and reduce bottom margin */
-    }
-
-    .secondSection .box {
-        width: 100%; /* Make boxes full width on smaller screens */
-        flex-direction: column; /* Stack boxes vertically */
-        align-items: center; /* Center align items */
-    }
-
-    .secondSection .vertical {
-        margin: 20px 0; /* Adjust margin between boxes */
+        width: 80%;
     }
 
     .toolsUsage {
-        width: 100%; /* Make the section full width on smaller screens */
-        padding: 30px 20px; /* Adjust padding for smaller screens */
-        gap: 20px; /* Increase gap between icons */
-        overflow-x: auto; /* Add horizontal scroll for small screens */
+        padding: 20px 10px;
     }
 
     .toolsUsage .toolsIcon {
-        width: 60px; /* Adjust the width of each icon container */
-        height: 60px; /* Adjust the height of each icon container */
+        width: 50px;
+        height: 50px;
     }
 
     .toolsUsage .toolsIcon img {
-        width: 40px; /* Adjust the size of the icons */
-    }
-
-    .social-icons {
-        margin: 0 auto; /* Center the social icons */
-    }
-
-    .social-icon {
-        margin: 5px; /* Adjust margin between social icons */
+        width: 30px;
     }
 }
