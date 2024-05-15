@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 
     <title>Contact Priyanshu</title>
 </head>
@@ -33,9 +34,12 @@
                         <input type="text" id="first-name" name="first" required>
                     </p>
                     <p>
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </p>
+                          <label for="phone">Phone Number:</label>
+                          <span class="phone-container">
+                            <select id="country-code" class="country-code"></select>
+                            <input type="tel" id="phone" name="phone" required>
+                          </span>
+                      </p>
                       
                     <p>
                         <label for="email">Email Address:</label>

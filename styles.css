@@ -258,7 +258,7 @@ footer .footer-rights{
 .toolsUsage .toolsIcon:hover .tooltip{
     opacity: 1;
 }
-.form{
+.form {
     align-items: center;
     font-size: 25px;
 }
@@ -269,17 +269,42 @@ label {
     width: 250px; /* Adjust the width as needed */
     text-align: left; /* Change to 'right' if you want labels close to the inputs */
 }
-input, textarea {
-    font-size: 20px;
+
+.phone-number-input {
+    display: inline-flex;
+    align-items: center;
+}
+
+.country-code,
+#message,
+#first-name,
+#email {
     padding: 5px;
-    width: 250px;
-    text-align: left; /* Align text to the left */
+    font-size: 20px;
+    border: 1px solid #ccc; /* Optional border for better visibility */
     border-radius: 5px;
     vertical-align: middle; /* Align text vertically in the middle */
     margin-bottom: 10px;
+    width: calc(50% - 15px); /* Adjust based on label width and desired spacing */
+    box-sizing: border-box; /* Ensure width includes padding and border */
+}
+#phone {
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid #ccc; /* Optional border for better visibility */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: calc(50% - 120px); /* Adjust based on label width and desired spacing */
+    box-sizing: border-box; /* Ensure width includes padding and border */
 }
 
 
+.country-code {
+    /* Reset default styles and set desired width */
+    width: fit-content; /* Shrink dropdown to content width */
+    max-width: 100px; /* Optional maximum width for dropdown */
+    overflow: hidden; /* Hide overflowing content if necessary */
+}
 /* Responsive styles for tablets (up to 768px) */
 @media screen and (max-width: 768px) {
     .fixed-header {
