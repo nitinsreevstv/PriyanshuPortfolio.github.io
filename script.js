@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Download resume button click event listener (if you're using it)
     document.getElementById('downloadResumeBtn').onclick = function () {
-      var resumeUrl = 'Priyanshu_resume.docx'; // Replace with your actual resume file URL
+      var resumeUrl = 'Priyanshu_resume.pdf'; // Replace with your actual resume file URL
       var link = document.createElement('a');
       link.href = resumeUrl;
-      link.download = 'Priyanshu_resume.docx';
+      link.download = 'Priyanshu_resume.pdf';
       link.click();
     };
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Scroll to the "Work Experience" section
       document.getElementById('work-experience-section').scrollIntoView({ behavior: 'smooth' });
-    });
+    })
 
     // Skills link click event listener (if you're using it)
     document.querySelector('nav ul li a[href="#skillsSection"]').addEventListener('click', function (event) {
